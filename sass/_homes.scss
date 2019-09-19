@@ -133,17 +133,48 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: 300px;
     margin: auto;
     left: 0;
     right: 0;
     .slide {
       position: relative;
-      height: 300px;
       width: auto;
       .img {
         height: 70vh;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .poster {
+    &--slide {
+      width: 250px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .poster {
+    &--slide {
+      width: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .poster {
+    &--slide {
+      width: 150px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .slidecontainer {
+    &--slide {
+      width: 100px;
     }
   }
 }
