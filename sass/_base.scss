@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300|Questrial&display=swap&subset=korean");
+
+// FONT VARIABLES
+$font-primary: "Questrial", "Noto Sans KR", sans-serif;
+
+// COLOR VARIABLES
+$color-primary: #000;
+$color-bg: #fff;
+$color-link: #fff;
+$color-link-hover: #fff;
+$color-grey: #f5f5f5;
+$color-accent: #32ff76;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: $color-accent;
+}
+
+::-moz-selection {
+  background: $color-accent;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: $font-primary;
+  word-break: keep-all;
+  word-wrap: break-word;
+  color: $color-primary;
+  background-color: $color-bg;
+}

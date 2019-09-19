@@ -1,0 +1,250 @@
+.gr-2 {
+  padding: 60px 2rem 0 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 25vh 15vh 35vh;
+
+  &__title {
+    padding-top: 1rem;
+    font-size: 6vw;
+    grid-row: 1 / 2;
+    grid-column: 1 / 6;
+    border-top: 1px solid $color-primary;
+    border-bottom: 1px solid $color-primary;
+  }
+
+  &__year {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  &__category {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  &__desc-en {
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+  }
+
+  &__desc-kr {
+    grid-row: 3 / 4;
+    grid-column: 3 / 5;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .gr-2 {
+    grid-gap: 1rem;
+    &__desc-en {
+      grid-row: 2 / 3;
+      grid-column: 3 / -1;
+    }
+
+    &__desc-kr {
+      grid-row: 3 / 4;
+      grid-column: 3 / -1;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .gr-2 {
+    grid-template-rows: 25vh repeat(2, min-content);
+    grid-gap: 1rem;
+    margin-bottom: 5rem;
+    &__category {
+      grid-row: 2 / 3;
+      grid-column: 2 / -1;
+    }
+
+    &__desc-en {
+      grid-row: 3 / 4;
+      grid-column: 2 / -1;
+    }
+
+    &__desc-kr {
+      grid-row: 4 / 5;
+      grid-column: 2 / -1;
+    }
+  }
+}
+
+.textstyle {
+  a {
+    &:link,
+    &:visited {
+      transition: 0.3s all;
+      color: $color-primary;
+      text-decoration-style: solid;
+      text-decoration-color: $color-accent;
+
+      text-underline-offset: 5px;
+      text-decoration-thickness: 3px;
+    }
+
+    &:hover {
+      transition: 0.3s all;
+      color: $color-accent;
+    }
+
+    &:focus,
+    &:active {
+      color: $color-accent;
+    }
+  }
+}
+.cad__content {
+  &__text {
+    margin: 5rem 20rem;
+    padding-top: 0.5rem;
+    max-width: 1920px;
+    border-top: 1px solid $color-primary;
+    line-height: 2;
+
+    &--bg {
+      background-color: #cdf120;
+    }
+  }
+
+  &__img {
+    margin: auto 20rem;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    > img {
+      margin: auto;
+      max-width: 100%;
+    }
+  }
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 35%;
+  height: 0;
+  overflow: hidden;
+  margin: auto 20rem;
+  max-width: 1920px;
+  > iframe,
+  > object,
+  > embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cad__content {
+    &__text {
+      margin: 5rem 10vw;
+    }
+    &__img {
+      margin: auto 10vw;
+    }
+  }
+
+  .embed-container {
+    margin: 0;
+    padding-bottom: 45%;
+  }
+}
+
+.col-kr {
+  line-height: 2;
+  margin: 0 2rem;
+  -moz-column-count: 4;
+  -webkit-column-count: 4;
+  column-count: 4;
+  margin-bottom: 10rem;
+  > p {
+    margin: 1rem 0;
+    border-top: 1px solid $color-primary;
+    border-bottom: 1px solid $color-primary;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .col-kr {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .col-kr {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .col-kr {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14rem;
+  margin-bottom: 5rem;
+  font-size: 7vw;
+}
+
+.slidecontainer {
+  height: 55vh;
+  position: relative;
+
+  &__slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    margin: auto;
+
+    &__content {
+      position: relative;
+      height: 40vh;
+      width: auto;
+
+      .img {
+        height: 40vh;
+      }
+    }
+  }
+}
+
+.black {
+  background-color: $color-primary;
+  color: $color-bg;
+
+  > p {
+    border-top: 1px solid $color-bg;
+    border-bottom: 1px solid $color-bg;
+  }
+}
+.row {
+  flex-direction: row;
+}
+
+img.half {
+  max-width: 25%;
+  flex-direction: row;
+}
+.whitespace {
+  width: 100%;
+  height: 4rem;
+}

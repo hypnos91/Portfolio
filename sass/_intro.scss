@@ -1,0 +1,78 @@
+.demo-3 {
+  --color-text: #191a1b;
+  --color-bg: #c5a98a;
+  --color-link: #3c49b2;
+  --color-link-hover: #191b1b;
+  --color-content-text: #191b1b;
+  --color-content-link: #191b1b;
+  --color-content-link-hover: #191b1b;
+  --color-content-secondary: #9f8465;
+  --font-content: Prata;
+}
+
+.content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.distort {
+  position: absolute;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.distort__img {
+  opacity: 0;
+}
+
+.quote {
+  display: block;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 2rem;
+  z-index: 999;
+  font-weight: normal;
+}
+
+.menu__link,
+.quote__link {
+  z-index: 999;
+  position: relative;
+  white-space: nowrap;
+  color: $color-primary;
+  text-decoration-style: solid;
+  text-decoration-color: $color-accent;
+
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.menu__link span,
+.quote__link span {
+  display: inline-block;
+}
+.intro__arrow__container {
+  transition: 0.5s all;
+}
+.intro__arrow {
+  width: 3rem;
+  position: absolute;
+  left: 50%;
+  bottom: -50%;
+  transform: translate(-25%, -10%);
+  animation: arrowMove 0.8s ease 5;
+}
+.in-transition {
+  transition: transform 900ms ease;
+}

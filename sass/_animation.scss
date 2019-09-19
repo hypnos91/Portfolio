@@ -1,0 +1,93 @@
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow {
+  0% {
+    color: #615aa6;
+  }
+
+  20% {
+    color: #45795f;
+  }
+
+  40% {
+    color: #d8c1ae;
+  }
+
+  60% {
+    color: #ce3d30;
+  }
+
+  80% {
+    color: #d1665f;
+  }
+
+  010% {
+    color: #615aa6;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow {
+  0% {
+    color: #615aa6;
+  }
+
+  20% {
+    color: #45795f;
+  }
+
+  40% {
+    color: #d8c1ae;
+  }
+
+  60% {
+    color: #ce3d30;
+  }
+
+  80% {
+    color: #d1665f;
+  }
+
+  010% {
+    color: #615aa6;
+  }
+}
+
+/* Standar Syntax */
+@keyframes rainbow {
+  0% {
+    color: #615aa6;
+  }
+
+  20% {
+    color: #45795f;
+  }
+
+  40% {
+    color: #d8c1ae;
+  }
+
+  60% {
+    color: #ce3d30;
+  }
+
+  80% {
+    color: #d1665f;
+  }
+
+  010% {
+    color: #615aa6;
+  }
+}
+
+/* Standar Syntax */
+@keyframes arrowMove {
+  0% {
+    opacity: 1;
+    transform: translate(-25%, -10%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-25%, -5%);
+  }
+}
