@@ -39,8 +39,15 @@ body {
   width: 100%;
   height: 80px; }
   .nav__logo {
+    margin-top: 7px;
     margin-left: 2rem;
-    line-height: 60px; }
+    line-height: 60px;
+    width: 40px; }
+    .nav__logo__paul_logo {
+      width: 50px; }
+      .nav__logo__paul_logo:hover {
+        transition: all 0.2s;
+        color: #0057ff; }
   .nav__item:nth-child(1) {
     margin-right: 1.5rem; }
   .nav__link {
@@ -246,16 +253,35 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: 1200px;
     margin: auto;
     left: 0;
     right: 0; }
     .poster--slide .slide {
       position: relative;
-      height: 70vh;
       width: auto; }
       .poster--slide .slide .img {
-        height: 70vh; }
+        height: 50vh; }
+
+@media only screen and (max-width: 1200px) {
+  .poster--slide {
+    width: 900px; } }
+
+@media only screen and (max-width: 900px) {
+  .poster--slide {
+    width: 700px; } }
+
+@media only screen and (max-width: 700px) {
+  .poster--slide {
+    width: 500px; } }
+
+@media only screen and (max-width: 500px) {
+  .poster--slide {
+    width: 400px; } }
+
+@media only screen and (max-width: 400px) {
+  .poster--slide {
+    width: 300px; } }
 
 .gr-2 {
   padding: 60px 2rem 0 2rem;
@@ -406,20 +432,40 @@ body {
   font-size: 7vw; }
 
 .slidecontainer {
-  height: 55vh;
-  position: relative; }
+  height: 60vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .slidecontainer__slide {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
+    width: 1200px;
     margin: auto; }
     .slidecontainer__slide__content {
       position: relative;
-      height: 40vh;
       width: auto; }
       .slidecontainer__slide__content .img {
-        height: 40vh; }
+        height: 50vh; }
+
+@media only screen and (max-width: 1200px) {
+  .slidecontainer__slide {
+    width: 900px; } }
+
+@media only screen and (max-width: 900px) {
+  .slidecontainer__slide {
+    width: 700px; } }
+
+@media only screen and (max-width: 700px) {
+  .slidecontainer__slide {
+    width: 500px; } }
+
+@media only screen and (max-width: 500px) {
+  .slidecontainer__slide {
+    width: 400px; } }
+
+@media only screen and (max-width: 400px) {
+  .slidecontainer__slide {
+    width: 300px; } }
 
 .black {
   background-color: #000;

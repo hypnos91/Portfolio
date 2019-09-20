@@ -6,8 +6,17 @@
   height: 80px;
 
   &__logo {
+    margin-top: 7px;
     margin-left: 2rem;
     line-height: 60px;
+    width: 40px;
+    &__paul_logo {
+      width: 50px;
+      &:hover {
+        transition: all 0.2s;
+        color: #0057ff;
+      }
+    }
   }
   &__item:nth-child(1) {
     margin-right: 1.5rem;
