@@ -120,7 +120,8 @@ body {
   margin: 0 auto;
   font-size: 2rem;
   z-index: 999;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 1.5; }
 
 .menu__link,
 .quote__link {
@@ -166,27 +167,41 @@ body {
     margin: 0 1rem;
     grid-gap: 1rem; } }
 
-.cad {
+.movie {
   grid-row: 1 / 2;
   grid-column: 1 / span 2; }
 
-.fn {
+.cad {
   grid-row: 1 / span 2;
   grid-column: 3 / span 2; }
 
-.fct {
+.fn {
   grid-row: 2 / 3;
   grid-column: 1 / span 2; }
 
+.fct {
+  grid-row: 2 / 3;
+  grid-column: 3 / span 2; }
+
+.mb {
+  grid-row: 3 / 4;
+  grid-column: 1 / span 2; }
+
 @media only screen and (max-width: 500px) {
-  .cad {
+  .movie {
     grid-row: 1 / 2;
     grid-column: 1 / -1; }
-  .fn {
+  .cad {
     grid-row: 2 / 3;
     grid-column: 1 / -1; }
-  .fct {
+  .fn {
     grid-row: 3 / 4;
+    grid-column: 1 / -1; }
+  .fct {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1; }
+  .mb {
+    grid-row: 5 / 6;
     grid-column: 1 / -1; } }
 
 .work {
@@ -484,6 +499,10 @@ img.half {
 .whitespace {
   width: 100%;
   height: 4rem; }
+
+#small {
+  margin: 1rem auto;
+  max-width: 60%; }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rainbow {
