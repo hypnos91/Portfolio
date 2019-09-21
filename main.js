@@ -188,12 +188,15 @@ TweenMax.from(".fct", 1, {
   ease: Expo.ease
 });
 
-//Flicking
+//slick
 {
-  var flicking = new eg.Flicking(".poster--slide", {
-    circular: false,
-    gap: 40
-  }).on("select", e => {
-    e.panel.focus(300);
+  $(".poster--slide").slick({
+    centerMode: true,
+    centerPadding: "60px",
+    variableWidth: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4
   });
 }
