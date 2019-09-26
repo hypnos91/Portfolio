@@ -472,6 +472,16 @@ img.half {
   margin: 1rem auto;
   max-width: 60%; }
 
+.Bottom_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 1rem 0;
+  font-size: 6vw; }
+
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rainbow {
   0% {

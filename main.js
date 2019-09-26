@@ -167,8 +167,15 @@ TweenMax.from(".quote", 1, {
   ease: Expo.ease
 });
 
-TweenMax.from(".cad", 1, {
+TweenMax.from(".movie", 1, {
   delay: 0.4,
+  opacity: 0,
+  y: 50,
+  ease: Expo.ease
+});
+
+TweenMax.from(".cad", 1, {
+  delay: 0.8,
   opacity: 0,
   y: 50,
   ease: Expo.ease
@@ -182,6 +189,13 @@ TweenMax.from(".fn", 1, {
 });
 
 TweenMax.from(".fct", 1, {
+  delay: 1.2,
+  opacity: 0,
+  y: 50,
+  ease: Expo.ease
+});
+
+TweenMax.from(".mb", 1, {
   delay: 1.2,
   opacity: 0,
   y: 50,
